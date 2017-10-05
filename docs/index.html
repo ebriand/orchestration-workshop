@@ -1018,34 +1018,6 @@ class: extra-details
 
 - Our goal is to make that performance graph go up (without changing a line of code!)
 
---
-
-- Before trying to scale the application, we'll figure out if we need more resources
-
-  (CPU, RAM...)
-
-- For that, we will use good old UNIX tools on our Docker node
-
----
-
-## Looking at resource usage
-
-- Let's look at CPU, memory, and I/O usage
-
-.exercise[
-
-- run `top` to see CPU and memory usage (you should see idle cycles)
-
-- run `vmstat 3` to see I/O usage (si/so/bi/bo)
-  <br/>(the 4 numbers should be almost zero, except `bo` for logging)
-
-]
-
-We have available resources.
-
-- Why?
-- How can we use them?
-
 ---
 
 ## Scaling workers on a single node
